@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="./Screenshot%202026-01-12%20154413.png" alt="Dashboard Preview" width="800" />
+</div>
+
+<br />
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

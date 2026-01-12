@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.app-header { margin-bottom: 40px; }
+.app-header h1 { font-size: 32px; font-weight: 800; margin: 0 0 8px 0; }
+.app-header p { color: #666; font-size: 16px; margin: 0; }
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .content-grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card-header { 
+  margin-bottom: 24px; 
+}
+.card-header h2 { 
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+.card-header p { font-size: 14px; color: #6b7280; margin: 0; }
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.modern-input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.modern-input:focus { border-color: #000; }
+
+.search-section { margin-bottom: 20px; }
+
+.no-users {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  background-color: #f9fafb;
+}
